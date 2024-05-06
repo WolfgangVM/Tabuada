@@ -33,8 +33,8 @@ def tabuada():
     acertos = Label(janela, text="Acertos:", font=("Arial", 10), fg='green')
     acertos.grid(row=5, column=0)
 
-# Botão para iniciar a tabuada
+# Botão para iniciar e testar a tabuada
 botao_iniciar = Button(janela, text="Iniciar Tabuada", command=tabuada)
-botao_iniciar.grid(row=2, column=1)
+botao_iniciar.grid(row=6, column=1)
 
 janela.mainloop()
