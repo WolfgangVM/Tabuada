@@ -15,9 +15,11 @@ def tabuada():
     num2 = random.randint(1, 10)
     res_correta = num1 * num2
 
+    #Mostra a multiplicação para responder
     label = Label(janela, text=f"{num1} x {num2} = ?", font=("Arial", 12))
     label.grid(row=1, column=1, padx=5, pady=5)
 
+    #totões de alternativas para resposta
     botao1 = Button(janela, text="opção1")
     botao1.grid(row=3, column=0)
 
@@ -33,7 +35,7 @@ def tabuada():
     acertos = Label(janela, text="Acertos:", font=("Arial", 10), fg='green')
     acertos.grid(row=5, column=0)
 
-# Botão para iniciar e testar a tabuada
+# Botão para iniciar e testar a tabuada. Mais para frente este bo~tao ira sumir após iniciar a tabuada
 botao_iniciar = Button(janela, text="Iniciar Tabuada", command=tabuada)
 botao_iniciar.grid(row=6, column=1)
 
